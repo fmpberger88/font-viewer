@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Typo | Test-drive your text</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <!-- Im <head>-Bereich Ihres HTML-Dokuments -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<div class = "outer-container">
+    <header>
+        <h1>TYP</h1>
+        <h2>Test-drive your text</h2>
+    </header>
+    <div class="formHolder">
+        <form method="POST">
+            <div class="third">
+                Font Family <select name="font" id="font">
+                <option value="helvetica" id="helvetica">Helvetica</option>
+                <option value="times" id="times">Times</option>
+                <option value="impact" id="impact">Impact</option>
+                <option value="courier" id="courier">Courier</option>
+                <option value="verdana" id="verdana">Verdana</option>
+                <option value="Open Sans">Open Sans</option>
+                <option value="Roboto">Roboto</option>
+                <option value="Arial">Arial</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Tahoma">Tahoma</option>
+                <option value="Trebuchet MS">Trebuchet MS</option>
+                <option value="Comic Sans MS">Comic Sans MS</option>
+
+            </select>
+            </div>
+            <div class="third">
+                Font Size
+                <br>
+                <input type="text" placeholder="18" id="size">
+            </div>
+            <div class="third">
+                Font Weight  <select name="weight" id="weight">
+                <option value="normal">Normal</option>
+                <option value="bold">Bold</option>
+                <option value="bolder">Bolder</option>
+                <option value="lighter">lighter</option>
+            </select>
+            </div>
+        </form>
+    </div>
+    <div class="preview">Sample Font</div>
+    <textarea name="text" placeholder="Type something here and see what happens..." id="text" cols="30" rows="10"></textarea>
+</div>
+</body>
+<script src="main.js"></script>
+</html>

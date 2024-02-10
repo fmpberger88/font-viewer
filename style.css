@@ -1,0 +1,135 @@
+body {
+    background-image: url("https://content.codecademy.com/courses/jquery/images/typetile.png");
+    background-repeat: repeat;
+    margin: 20px;
+    padding: 0;
+}
+
+.outer-container {
+    width: 100%;
+    max-width: 1200px; /* Prevents the container from becoming too wide on large screens */
+    margin: 0 auto; /* Centers the container */
+}
+
+h1 {
+    color: #FF6D04;
+    font-size: 8rem;
+    font-weight: 300;
+    letter-spacing: 12px;
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+h2 {
+    color: #665C3D;
+    font-size: 4rem;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    font-family: "verdana";
+}
+
+.preview {
+    align: center;
+    background: white;
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0 auto 0 auto;
+    min-height: 150px;
+    padding: 30px;
+    word-wrap: break-word;
+}
+
+textarea {
+    border-color: #E6B000;
+    border-radius: 4px;
+    border-style: solid;
+    border-width:1px;
+    display: block;
+    font-family: "Helvetica-Light", "Helvetica", "Arial", Arial, sans-serif;
+    line-height: 20px;
+    margin: 30px auto 30px auto;
+    padding: 40px;
+    width: 80%;
+    font-size: 1.2rem;
+    height: 400px;
+}
+
+.formHolder {
+    display: flex;
+    flex-direction: column;
+    background-color: #665C3D;
+    border-radius: 4px 4px 0px 0px;
+    color: #FF6D04;
+    font-family: "verdana";
+    font-size: 1.5rem;
+    margin: 40px auto 0 auto;
+    padding: 40px;
+    text-transform: uppercase;
+
+}
+
+
+
+.third {
+    margin-bottom: 20px; /* Added margin */
+    padding: 10px; /* Added padding */
+    text-align: center;
+}
+
+select, input {
+    padding: 10px; /* Added padding */
+    border-radius: 4px; /* Added border radius */
+    margin-top: 5px; /* Added margin above */
+    width: 90%; /* Adjusted width */
+    font-size: 1rem; /* Adjusted font size */
+    background-color: #FFF8F0; /* Light background */
+    border: 1px solid #FF6D04; /* Border color */
+}
+
+
+
+#weight {
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 5rem; /* Kleinere Schriftgröße für H1 */
+        letter-spacing: 5px; /* Verringertes Letter-Spacing */
+        line-height: 1rem; /* Angepasste Zeilenhöhe */
+    }
+
+    h2 {
+        font-size: 2.5rem; /* Kleinere Schriftgröße für H2 */
+        margin-bottom: 20px; /* Verringerte Margin */
+    }
+
+    .formHolder, .preview, textarea {
+        padding: 20px; /* Verringerte Padding */
+    }
+
+    .formHolder {
+        margin: 20px 10px; /* Verringerte Margin */
+    }
+
+    textarea, .preview, .formHolder {
+        width: 90%; /* Breiter für kleine Bildschirme */
+        margin: 20px auto; /* Zentrierung und reduzierter Außenabstand */
+    }
+
+    .third {
+        margin-bottom: 10px; /* Reduzierter Abstand zwischen Formularelementen */
+    }
+
+    select, input {
+        width: 100%; /* Vollständige Breite für Eingabefelder */
+        font-size: 30px;
+    }
+}
