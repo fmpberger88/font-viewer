@@ -1,6 +1,5 @@
 body {
-    background-image: url("https://content.codecademy.com/courses/jquery/images/typetile.png");
-    background-repeat: repeat;
+    background-color: #E6B000;
     margin: 20px;
     padding: 0;
 }

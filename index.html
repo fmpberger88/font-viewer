@@ -3,16 +3,13 @@
 <head>
     <title>Typo | Test-drive your text</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link href="style.css" rel="stylesheet">
-    <!-- Im <head>-Bereich Ihres HTML-Dokuments -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-
-
 </head>
 <body>
-<div class = "outer-container">
+<div class="outer-container" x-data="{ fontFamily: 'Helvetica', fontSize: '18', fontWeight: 'normal', text: 'Type something here and see what happens...' }">
     <header>
         <h1>TYP</h1>
         <h2>Test-drive your text</h2>
@@ -20,40 +17,45 @@
     <div class="formHolder">
         <form method="POST">
             <div class="third">
-                Font Family <select name="font" id="font">
-                <option value="helvetica" id="helvetica">Helvetica</option>
-                <option value="times" id="times">Times</option>
-                <option value="impact" id="impact">Impact</option>
-                <option value="courier" id="courier">Courier</option>
-                <option value="verdana" id="verdana">Verdana</option>
-                <option value="Open Sans">Open Sans</option>
-                <option value="Roboto">Roboto</option>
-                <option value="Arial">Arial</option>
-                <option value="Georgia">Georgia</option>
-                <option value="Tahoma">Tahoma</option>
-                <option value="Trebuchet MS">Trebuchet MS</option>
-                <option value="Comic Sans MS">Comic Sans MS</option>
-
-            </select>
+                Font Family
+                <select x-model="fontFamily" name="font" id="font">
+                    <option value="helvetica" id="helvetica">Helvetica</option>
+                    <option value="times" id="times">Times</option>
+                    <option value="impact" id="impact">Impact</option>
+                    <option value="courier" id="courier">Courier</option>
+                    <option value="verdana" id="verdana">Verdana</option>
+                    <option value="Open Sans">Open Sans</option>
+                    <option value="Roboto">Roboto</option>
+                    <option value="Arial">Arial</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Tahoma">Tahoma</option>
+                    <option value="Trebuchet MS">Trebuchet MS</option>
+                    <option value="Comic Sans MS">Comic Sans MS</option>
+                </select>
             </div>
             <div class="third">
                 Font Size
                 <br>
-                <input type="text" placeholder="18" id="size">
+                <input x-model="fontSize" type="text" placeholder="18">
             </div>
             <div class="third">
-                Font Weight  <select name="weight" id="weight">
-                <option value="normal">Normal</option>
-                <option value="bold">Bold</option>
-                <option value="bolder">Bolder</option>
-                <option value="lighter">lighter</option>
-            </select>
+                Font Weight
+                <select x-model="fontWeight" name="weight">
+                    <option value="normal">Normal</option>
+                    <option value="bold">Bold</option>
+                    <option value="bolder">Bolder</option>
+                    <option value="lighter">lighter</option>
+                </select>
             </div>
         </form>
     </div>
-    <div class="preview">Sample Font</div>
-    <textarea name="text" placeholder="Type something here and see what happens..." id="text" cols="30" rows="10"></textarea>
-</div>
+    <div class="preview" :style="{ 'font-family': fontFamily, 'font-size': fontSize + 'px', 'font-weight': fontWeight }" x-text="text"></div>
+    <textarea x-model="text"></textarea>
+    </div>
+    <footer>
+        <p>
+            Foto von <a href="https://unsplash.com/de/@joseadd?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">JOSE LARRAZOLO</a> auf <a href="https://unsplash.com/de/fotos/ein-gelber-hintergrund-mit-kleinen-punkten-S8bde3hkBR8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </p>
+    </footer>
 </body>
-<script src="main.js"></script>
 </html>
