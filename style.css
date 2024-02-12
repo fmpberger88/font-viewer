@@ -98,6 +98,25 @@ select, input {
 #weight {
 }
 
+footer {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border: black 1px solid;
+    border-radius: 5px;
+    color: #FF6D04;
+    font-family: Verdana;
+
+    a {
+        color: #FF6D04;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: black;
+        transition: font-size;
+    }
+}
 @media only screen and (max-width: 600px) {
     h1 {
         font-size: 5rem; /* Kleinere Schriftgröße für H1 */
