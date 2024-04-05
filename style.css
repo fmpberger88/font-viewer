@@ -37,13 +37,15 @@ header {
 .preview {
     align: center;
     background: white;
-    font-family: Helvetica;
+    font-family: Helvetica, sans-serif;
     font-size: 18px;
     font-weight: normal;
-    margin: 0 auto 0 auto;
+    margin: 30px auto;
     min-height: 150px;
     padding: 30px;
     word-wrap: break-word;
+    height: 150px;
+    width: 80%;
 }
 
 textarea {
@@ -55,10 +57,11 @@ textarea {
     font-family: "Helvetica-Light", "Helvetica", "Arial", Arial, sans-serif;
     line-height: 20px;
     margin: 30px auto 30px auto;
-    padding: 40px;
+    padding: 30px;
     width: 80%;
     font-size: 1.2rem;
-    height: 400px;
+    height: 150px;
+    background-color: rosybrown;
 }
 
 .formHolder {

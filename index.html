@@ -41,20 +41,19 @@
             <div class="third">
                 Font Weight
                 <select x-model="fontWeight" name="weight">
+                    <option value="lighter">Lighter</option>
                     <option value="normal">Normal</option>
                     <option value="bold">Bold</option>
-                    <option value="bolder">Bolder</option>
-                    <option value="lighter">lighter</option>
                 </select>
             </div>
         </form>
     </div>
-    <div class="preview" :style="{ 'font-family': fontFamily, 'font-size': fontSize + 'px', 'font-weight': fontWeight }" x-text="text"></div>
     <textarea x-model="text"></textarea>
+    <div class="preview" :style="{ 'font-family': fontFamily, 'font-size': fontSize + 'px', 'font-weight': fontWeight }" x-text="text"></div>
     </div>
     <footer>
         <p>
-            <a href="https://www.fmpberger.com">fmpberger</a>
+            <a href="https://www.fmpberger.com" target="_blank">fmpberger</a>
     </footer>
 </body>
 </html>
